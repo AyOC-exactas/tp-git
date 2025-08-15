@@ -1,6 +1,6 @@
 # Trabajo Práctico 0 - Git
 
-En este tp vamos a explorar brevemente el uso de **git**. 
+En este pequeño TP vamos a explorar brevemente el uso de **git**. La idea es establecer una base mínima común de conocimiento de git para el uso que le damos en la materia.
 
 **git** es una herramienta muy versátil y poderosa, que se puede adaptar a una gran cantidad de escenarios y flujos de trabajo.
 Por esta razón, en una primera mirada nos puede parecer abrumador el número de comandos y variantes que brinda,
@@ -282,23 +282,7 @@ Una vez que revisemos los cambios introducidos por la nueva branch y veamos todo
 Ahora nombramos nuestra Pull Request `Entrega TP Git` y añadimos una descripción pertinente (no hay ningún requisito particular para este TP).
 
 Las Pull Request permiten agregar personas específicas como _reviewers_, para mostrar que queremos su feedback específico.
-Procederemos a crear una pull request para nuestra branch y agregar como reviewer a uno de los docentes de la materia.
-
-Para saber qué docente está asignado como reviewer a su TP, contamos con el siguiente sistema de avanzada:
-
-Si el primer número de su Libreta Universitaria (entes del /) termina en:
-1. Asignar a @afernandezortuzar como reviewer
-2. Asignar a @brunocompu
-3. @franciscod
-4. @gasparzuker
-5. @jorgecszabo
-6. @makobot-sh
-7. @npache
-8. @pugliesee
-9. @stefmr
-10. (Si el número termina en 0) @TomasDeLosSantos
-
-(Sí, algunos docentes zafaron de la corrección del parcial en esta ocasión :laughing:)
+Procederemos a crear una pull request para nuestra branch y agregar como reviewer al bot de la materia @ayoc-bot. Este bot nos permite establecer respuestas automáticas y registrar resultados de tests en algunas entregas a lo largo del cuatri, por ejemplo, al terminar un parcial tendrán que asignar al bot como reviewer para completar la entrega.
 
 Hecho todo esto, podemos **Crear la Pull Request** con el botón verde que se encuentra debajo de la caja de descripción.
 
@@ -306,7 +290,7 @@ Para leer más sobre Pull Requests, pueden consultar ["Acerca de las solicitudes
 
 ## Como hacer consultas de TP
 
-Durante la cursada, manejaremos las consultas que sean específicas de un tp y su implementación mediante el canal público de consultas del servidor de discord, junto con el issue tracker de github.
+Durante la cursada, manejaremos las consultas que sean específicas de un tp y su implementación mediante el canal público de consultas del servidor de discord.
 
 ### Foro de consultas en discord
 
@@ -323,53 +307,8 @@ Para realizar una consulta:
 2. **Utilizar el buscador de discord** para revisar si no se respondieron ya preguntas similares
 3. Crear una nueva publicación con un título descriptivo (de ser relevante incluir número de guía o TP y ejercicio)
 4. Describir la consulta, teniendo cuidado de no dar soluciones a los trabajos prácticos ya que el canal es público
-    - Si la consulta requiere como contexto parte de la implementación de un ejercicio del TP, incluir los detalles privados en un link a la linea de código de github o un link a una **issue de github** (detalles más abajo). 
-
-### Issue tracker en github
-
-Para asistir con el uso del issue tracker de git, contamos con templates predefinidos que nos van a ayudar a organizarnos y les darán una guía de qué información necesitan los docentes para responder su consulta lo más rápido posible.
-Incluso es posible que resuelvan algunas dudas por su cuenta en el proceso de completar el template.
-
-Para crear una issue en su repositorio de github:
-
-1. **En su propio fork** del repositorio del TP navegar a la sección `Issues`
-2. Presionar el botón `New issue`
-
-![New issue](img/new-issue.png)
-
-1. En el popup elegir un tipo de issue template
-2. En el campo `description` **elegir el template correspondiente** al tipo de consulta a realizar
-   > Completar los campos marcados con `[COMPLETAR]`
-
-![alt text](img/fill-issue.png)
-
-1. Una vez completado el template utilizar el botón `Preview` para revisar que la consulta se esté generando correctamente.
-2. Presionar botón `Create`
-
-## Gists
-
-Para evitar pegar enormes logs de debuggeo en la issue, que dificultarían su lectura, vamos a compartir los logs como archivos separados mediante *gists* de Gitlab.
-Un _gist_ funciona como un pequeño repositorio con funcionalidad mínima para pocos archivos sueltos, con _syntax highlighting_.
-Está pensado para compartir código rápidamente sin necesidad de crear un repositorio completo nuevo.
-
-Para compartir logs o código mediante gists:
-1. Presionar el botón `+` al costado de la barra de búsqueda superior
-2. Seleccionar la opción `new gist`
-    ![Botón + en la barra superior de gitlab](img/new-gist.png)
-3. Completar título y contenido del gist, presionando el botón `Add another file` si queremos agregar más de un archivo.
-    ![Snippet de gitlab completado](img/fill_snippet.png)
-4. Elegir `Create secret gist` para que el gist no sea público, pero pueda ser accedido por aquellos que tengan el link.
-5. Presionar el botón `Create gist`
-    ![Nivel de privacidad y crear snippet](img/create-gist.png)
-
-## Ejercicio 4 (opcional): ejercitar issues y gists
-Como ejercicio opcional, les proponemos que creen una issue en su repositorio con alguno de los templates provistos por la cátedra (no es necesario que lo completen con información real).
-Verán que al usar un issue template, automáticamente se le asigna a todos los docentes de la cátedra!
-
-Incluyan en la issue (pueden modificarla después de su creación) el link a un gist con algo de texto.
+    - Si la consulta requiere como contexto parte de la implementación de un ejercicio del TP, incluir los detalles privados en un link a la linea de código de github (asegurense de que su repo sea privado), pero lo mejor será verlo directamente en los laboratorios. 
 
 ## Entrega
-Para entregar el trabajo, presionar el botón `Merge Pull request` y luego `Confirm Merge`.
-Revisar que figure como correcto el merge y que al volver a la página principal del repositorio, figuren los cambios nuevos.
-Opcionalmente, pueden presionar el botón `delete branch` al final del PR una vez completado el merge, para limpiar el repositorio.
+La entrega queda completa una vez generado el Pull Request y asignado @ayoc-bot como reviewer.
 
